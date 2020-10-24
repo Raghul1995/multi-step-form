@@ -44,7 +44,7 @@ import Button from '@material-ui/core/Button';
                     <Button
 						variant="contained"
 						color="primary"
-						primary={false}
+						
 						style={styles.Button}
 						onClick={this.back}
 					>
@@ -53,7 +53,7 @@ import Button from '@material-ui/core/Button';
 					<Button
 						variant="contained"
 						color="primary"
-						primary={true}
+						
 						style={styles.Button}
 						onClick={this.continue}
 					>						Confirm

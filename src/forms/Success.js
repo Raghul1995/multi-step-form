@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Dialog from '@material-ui/core/Dialog';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import AppBar from 'material-ui/AppBar';
 
@@ -16,10 +17,18 @@ import AppBar from 'material-ui/AppBar';
 		return (
 			<MuiThemeProvider>
 				<React.Fragment> {/*acts as a fake DOM element*/}
-					
+				<>
+          <Dialog
+            open
+            fullWidth
+            maxWidth='sm'
+          >
 					
 					<AppBar title="Success" />
                    <h1>Thank you for Submission</h1>
+
+				   </Dialog>
+        </>
 				</React.Fragment>
 			</MuiThemeProvider>
 		);

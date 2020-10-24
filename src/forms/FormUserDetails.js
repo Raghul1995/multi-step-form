@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Dialog from '@material-ui/core/Dialog';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
@@ -13,8 +14,14 @@ export class FormUserDetails extends Component {
 		return (
 			<MuiThemeProvider>
 				<React.Fragment>
-				
 					{/*acts as a fake DOM element*/}
+				<>
+          <Dialog
+            open
+            fullWidth
+            maxWidth='sm'
+          >
+					
 					<AppBar title="Enter user details" />
 					<TextField
 						hintText="Enter Your First Name"
@@ -40,12 +47,14 @@ export class FormUserDetails extends Component {
 					<Button
 						variant="contained"
 						color="primary"
-						primary={true}
+						
 						style={styles.Button}
 						onClick={this.continue}
 					>
 						Continue
 					</Button>
+					</Dialog>
+        </>
 				</React.Fragment>
 			</MuiThemeProvider>
 		);
